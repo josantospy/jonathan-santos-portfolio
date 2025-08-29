@@ -106,13 +106,10 @@ function initNavigation() {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
-                    gsap.to(window, {
-                        duration: 1.2,
-                        scrollTo: {
-                            y: target,
-                            offsetY: 80
-                        },
-                        ease: "power2.inOut"
+                    const targetPosition = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
                     });
                     
                     if (isMenuOpen) {
@@ -146,12 +143,8 @@ function initNavigation() {
             });
         }
         
-        // Hide/show navbar based on scroll direction
-        if (currentScrollY > lastScrollY && currentScrollY > 200) {
-            gsap.to(navbar, { y: -100, duration: 0.3 });
-        } else {
-            gsap.to(navbar, { y: 0, duration: 0.3 });
-        }
+        // Keep navbar always visible (sticky behavior)
+        gsap.to(navbar, { y: 0, duration: 0.3 });
         
         lastScrollY = currentScrollY;
         ticking = false;
@@ -166,9 +159,10 @@ function initNavigation() {
     
     // Active section highlighting
     const sections = document.querySelectorAll('section[id]');
+    
     const observerOptions = {
-        threshold: 0.3,
-        rootMargin: '-80px 0px -50% 0px'
+        threshold: 0.1,
+        rootMargin: '-100px 0px -60% 0px'
     };
     
     const navObserver = new IntersectionObserver((entries) => {
@@ -712,10 +706,9 @@ function createScrollToTop() {
     `;
     
     button.addEventListener('click', () => {
-        gsap.to(window, {
-            duration: 1.5,
-            scrollTo: { y: 0 },
-            ease: "power2.inOut"
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
     });
     
