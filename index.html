@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Santos - Senior Software Engineer</title>
+    <meta name="description" content="Senior Software Engineer with 12+ years of experience building scalable web applications and enterprise solutions.">
+    <meta name="keywords" content="Software Engineer, Full Stack Developer, React, Node.js, Python, AWS, Dominican Republic">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Jonathan Santos</span>
+                <span class="logo-subtitle">Senior Engineer</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-text="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-text="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link" data-text="Work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-cta">
+                <a href="mailto:jonathan.santos@email.com" class="cta-button">Let's Talk</a>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="floating-elements">
+                <div class="float-element" data-speed="2">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="float-element" data-speed="3">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="float-element" data-speed="1.5">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="float-element" data-speed="2.5">
+                    <i class="fab fa-aws"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🇩🇴</span>
+                    <span class="badge-text">Based in Dominican Republic</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm Jonathan Santos</span>
+                    <span class="title-line gradient-text">Senior Software Engineer</span>
+                </h1>
+                <p class="hero-description">
+                    I craft scalable digital experiences and robust backend systems. 
+                    With 12+ years of expertise, I transform complex ideas into elegant solutions 
+                    that drive business growth and user engagement.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Beautiful Children</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-avatar">
+                        <div class="avatar-border"></div>
+                        <div class="avatar-content">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="status-indicator"></div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-lang">JavaScript</span>
+                            <div class="code-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span> 
+                                <span class="code-variable">developer</span> = {
+                            </div>
+                            <div class="code-line indent">
+                                name: <span class="code-string">'Jonathan Santos'</span>,
+                            </div>
+                            <div class="code-line indent">
+                                experience: <span class="code-number">12</span>,
+                            </div>
+                            <div class="code-line indent">
+                                passion: <span class="code-string">'Creating Impact'</span>
+                            </div>
+                            <div class="code-line">};</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Building the future, one line of code at a time</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-text">
+                        <p class="text-large">
+                            I'm a seasoned software engineer with over 12 years of experience crafting 
+                            digital solutions that make a difference. Originally from the Dominican Republic, 
+                            I've dedicated my career to transforming complex business requirements into 
+                            elegant, scalable applications.
+                        </p>
+                        
+                        <p>
+                            As a father of three, I understand the value of efficiency and precision. 
+                            This perspective has shaped my approach to software development — creating 
+                            solutions that are not only technically sound but also meaningful and impactful.
+                        </p>
+                        
+                        <p>
+                            My expertise spans the entire software development lifecycle, from architecture 
+                            design to deployment and maintenance. I'm passionate about mentoring teams, 
+                            implementing best practices, and staying at the forefront of emerging technologies.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <div>
+                                    <h4>Innovation Focused</h4>
+                                    <p>Always exploring cutting-edge technologies and methodologies</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Team Leadership</h4>
+                                    <p>Experienced in leading cross-functional development teams</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="skills-container">
+                            <h3>Core Technologies</h3>
+                            <div class="tech-stack">
+                                <div class="tech-category">
+                                    <h4>Frontend</h4>
+                                    <div class="tech-items">
+                                        <span class="tech-item">React</span>
+                                        <span class="tech-item">TypeScript</span>
+                                        <span class="tech-item">Next.js</span>
+                                        <span class="tech-item">Vue.js</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>Backend</h4>
+                                    <div class="tech-items">
+                                        <span class="tech-item">Node.js</span>
+                                        <span class="tech-item">Python</span>
+                                        <span class="tech-item">PostgreSQL</span>
+                                        <span class="tech-item">MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>Cloud & DevOps</h4>
+                                    <div class="tech-items">
+                                        <span class="tech-item">AWS</span>
+                                        <span class="tech-item">Docker</span>
+                                        <span class="tech-item">Kubernetes</span>
+                                        <span class="tech-item">CI/CD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">A decade of building impactful solutions</p>
+            </div>
+            
+            <div class="experience-content">
+                <div class="experience-timeline">
+                    <div class="timeline-item active">
+                        <div class="timeline-marker">
+                            <div class="marker-ring"></div>
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Senior Software Engineer</h3>
+                                <div class="company-info">
+                                    <span class="company">TechCorp Solutions</span>
+                                    <span class="period">2020 — Present</span>
+                                </div>
+                            </div>
+                            <p class="timeline-description">
+                                Leading development of enterprise-grade web applications serving 100K+ users. 
+                                Architected scalable microservices infrastructure on AWS, reducing system latency by 40%. 
+                                Mentoring a team of 8 developers while implementing modern DevOps practices.
+                            </p>
+                            <div class="timeline-technologies">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>AWS</span>
+                                <span>MongoDB</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-ring"></div>
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Full Stack Developer</h3>
+                                <div class="company-info">
+                                    <span class="company">Digital Innovations RD</span>
+                                    <span class="period">2017 — 2020</span>
+                                </div>
+                            </div>
+                            <p class="timeline-description">
+                                Built robust RESTful APIs and microservices architecture. Optimized database queries 
+                                resulting in 60% performance improvement. Implemented distributed caching systems 
+                                and real-time data processing pipelines.
+                            </p>
+                            <div class="timeline-technologies">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-ring"></div>
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Developer</h3>
+                                <div class="company-info">
+                                    <span class="company">StartupRD</span>
+                                    <span class="period">2012 — 2017</span>
+                                </div>
+                            </div>
+                            <p class="timeline-description">
+                                Developed multiple web applications from concept to deployment. Collaborated closely 
+                                with design and product teams to deliver user-centric solutions. Gained expertise in 
+                                both frontend and backend technologies while working in an agile environment.
+                            </p>
+                            <div class="timeline-technologies">
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>jQuery</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="portfolio">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-subtitle">A showcase of impactful projects I've built</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-Commerce Platform</div>
+                        <h3>NextGen Commerce</h3>
+                        <p>A comprehensive e-commerce solution built for a major retail client. Features include real-time inventory management, advanced analytics, and seamless payment integration. Handles 10K+ transactions daily.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">150%</span>
+                                <span class="metric-label">Sales Increase</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2.3s</span>
+                                <span class="metric-label">Load Time</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">99.9%</span>
+                                <span class="metric-label">Uptime</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>AWS</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Data Analytics</div>
+                        <h3>InsightDash</h3>
+                        <p>Real-time analytics dashboard processing millions of data points. Built with Python microservices and React frontend, featuring interactive visualizations and predictive analytics.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View case study">
+                                    <i class="fas fa-file-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Mobile App</div>
+                        <h3>TaskFlow Mobile</h3>
+                        <p>Cross-platform mobile application for enterprise task management. Features offline synchronization, push notifications, and seamless collaboration tools for distributed teams.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>GraphQL</span>
+                            <span>Redux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-header centered">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's discuss your project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Get In Touch</h3>
+                        <p>I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out.</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:jonathan.santos@email.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">jonathan.santos@email.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+18091234567" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">+1 (809) 123-4567</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Dominican Republic</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="availability-status">
+                        <div class="status-indicator available"></div>
+                        <span>Available for new projects</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="modern-form">
+                        <div class="form-header">
+                            <h4>Send a Message</h4>
+                            <p>Tell me about your project</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Project Type</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a service</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="mobile-development">Mobile Development</option>
+                                <option value="cloud-architecture">Cloud Architecture</option>
+                                <option value="consulting">Technical Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-10k">Under $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project, timeline, and any specific requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>Jonathan Santos</h3>
+                        <p>Senior Software Engineer crafting digital experiences that matter.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Navigation</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#experience">Experience</a></li>
+                                <li><a href="#work">Work</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">Mobile Apps</a></li>
+                                <li><a href="#">Cloud Solutions</a></li>
+                                <li><a href="#">Consulting</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Connect</h4>
+                            <ul>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="mailto:jonathan.santos@email.com">Email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Jonathan Santos. All rights reserved.</p>
+                    <p>Built with passion in the Dominican Republic 🇩🇴</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
