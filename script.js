@@ -7,6 +7,29 @@ let isMenuOpen = false;
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Creative console portfolio summary
+    console.log('%c╔══════════════════════════════════════════════════════════════════╗', 'color: #3b82f6; font-weight: bold;');
+    console.log('%c║                    🚀 JONATHAN SANTOS - PORTFOLIO                ║', 'color: #3b82f6; font-weight: bold;');
+    console.log('%c╠══════════════════════════════════════════════════════════════════╣', 'color: #3b82f6; font-weight: bold;');
+    console.log('%c║  👨‍💻 Senior Software Developer | 12+ Years Experience           ║', 'color: #10b981;');
+    console.log('%c║  🌍 Based in Dominican Republic                                  ║', 'color: #10b981;');
+    console.log('%c║  📧 josantos.devos@gmail.com                                    ║', 'color: #10b981;');
+    console.log('%c║  🔗 linkedin.com/in/jonathan-santos-gomez-a51541b7              ║', 'color: #10b981;');
+    console.log('%c╠══════════════════════════════════════════════════════════════════╣', 'color: #3b82f6; font-weight: bold;');
+    console.log('%c║  💼 EXPERTISE:                                                   ║', 'color: #f59e0b; font-weight: bold;');
+    console.log('%c║    • C# & .NET Core / ASP.NET MVC                               ║', 'color: #6b7280;');
+    console.log('%c║    • React, Angular, Vue.js                                     ║', 'color: #6b7280;');
+    console.log('%c║    • SQL Server, REST APIs, Microservices                       ║', 'color: #6b7280;');
+    console.log('%c║    • Azure, Oracle Cloud, Power BI                              ║', 'color: #6b7280;');
+    console.log('%c╠══════════════════════════════════════════════════════════════════╣', 'color: #3b82f6; font-weight: bold;');
+    console.log('%c║  🎯 CURRENT ROLE:                                                ║', 'color: #f59e0b; font-weight: bold;');
+    console.log('%c║    Chamber of Commerce & Production Santo Domingo (2016-Present)║', 'color: #6b7280;');
+    console.log('%c║    • Enterprise Web Applications & Reporting Systems            ║', 'color: #6b7280;');
+    console.log('%c║    • API Integration & Business Intelligence                     ║', 'color: #6b7280;');
+    console.log('%c╚══════════════════════════════════════════════════════════════════╝', 'color: #3b82f6; font-weight: bold;');
+    console.log('%c🔍 Interested in my work? Check out this portfolio!', 'color: #ef4444; font-size: 14px; font-weight: bold;');
+    console.log('%c💡 Available for new projects and collaborations', 'color: #10b981; font-size: 12px;');
+    
     initCursor();
     initNavigation();
     initAnimations();
@@ -586,7 +609,7 @@ function initIntersectionObserver() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-fade-in-up');
-                observer.unobserver(entry.target);
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -629,8 +652,8 @@ function initPerformanceOptimizations() {
         document.head.appendChild(link);
     });
     
-    // Service Worker for caching (if supported)
-    if ('serviceWorker' in navigator) {
+    // Service Worker for caching (if supported and served over HTTP/HTTPS)
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.protocol === 'http:')) {
         navigator.serviceWorker.register('/sw.js').catch(err => {
             console.log('Service Worker registration failed:', err);
         });
@@ -764,4 +787,3 @@ if ('performance' in window) {
     });
 }
 
-console.log('Premium portfolio website loaded successfully! 🚀');

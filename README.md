@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing full-stack development experti
 
 ## Overview
 
-Professional portfolio highlighting 8+ years of enterprise web development experience, specializing in .NET technologies and modern frontend frameworks.
+Professional portfolio highlighting 12+ years of enterprise web development experience, specializing in .NET technologies and modern frontend frameworks.
 
 ## Technologies
 
