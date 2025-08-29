@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%c║  👨‍💻 Senior Software Developer | 12+ Years Experience           ║', 'color: #10b981;');
     console.log('%c║  🌍 Based in Dominican Republic                                  ║', 'color: #10b981;');
     console.log('%c║  📧 josantos.devos@gmail.com                                    ║', 'color: #10b981;');
-    console.log('%c║  🔗 linkedin.com/in/jonathan-santos-gomez-a51541b7              ║', 'color: #10b981;');
+    console.log('%c║  🔗 linkedin.com/in/jonathan-santos-b60531116                   ║', 'color: #10b981;');
     console.log('%c╠══════════════════════════════════════════════════════════════════╣', 'color: #3b82f6; font-weight: bold;');
     console.log('%c║  💼 EXPERTISE:                                                   ║', 'color: #f59e0b; font-weight: bold;');
     console.log('%c║    • C# & .NET Core / ASP.NET MVC                               ║', 'color: #6b7280;');

@@ -53,7 +53,9 @@ Specializing in:
 Senior AI-Powered Software Developer  
 Email: josantos.devos@gmail.com  
 Phone: +1 (809) 394-4174  
-LinkedIn: [jonathan-santos-gomez](https://www.linkedin.com/in/jonathan-santos-gomez-a51541b7/)  
+LinkedIn: [jonathan-santos](https://www.linkedin.com/in/jonathan-santos-b60531116/)  
+GitHub: [josantospy](https://github.com/josantospy)  
+Instagram: [josantosgomez](https://www.instagram.com/josantosgomez/)  
 Location: Dominican Republic 🇩🇴
 
 ## License
